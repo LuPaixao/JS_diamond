@@ -2,3 +2,16 @@
     display: flex;
     justify-content: center;
 }
+
+.caixa{
+    border: 5px solid red;
+    padding: 25px;
+    margin: 25px;
+    max-width: 500px;
+    width: 300px;
+}
+
+.pergunta{
+    padding: 20px;
+    margin-bottom: 20px;
+}
