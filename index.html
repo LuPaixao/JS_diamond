@@ -49,9 +49,40 @@
                 </div>
             </section>
 
+            <section class="questao">
+                <div class="caixa">
+                    <p class="pergunta">
+                        Quarta questão: Calcule o valor do reajuste de salário
+                    </p>
+                    <input type="number" id="salario">
+                    <input type="number" id="reajuste">
+                    <br>
+                    <button onclick="salRea()">Calcular</button>
+                </div>
+            </section>
 
-            
-        
+            <section class="questao">
+                <div class="caixa">
+                    <p class="pergunta">
+                        Quinta questão: Digite entre 1 a 7 os dias da semana
+                    </p>
+                    <input type="number" id="data">
+                    <br>
+                    <button onclick="semana()">Verificar</button>
+                </div>
+            </section>
+
+            <section class="questao">
+                <div class="caixa">
+                    <p class="pergunta">
+                        Sexta questão: Digite número par
+                    </p>
+                    <input type="number" id="valPar" name="number" min="1" max="100">
+                    <button onclick="valoresPar(document.getElementById('valPar').value)">Exibir</button>
+                </div>
+            </section>
+
+
         </main>
 
         <script src="scripts/index.js"></script>

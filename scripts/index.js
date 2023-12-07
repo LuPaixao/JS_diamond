@@ -39,4 +39,52 @@ function votacao() {
     alert("A pessoa não pode votar.");
   }
 }
+
+function salRea() {
+  // Obtém o salário atual
+  var salario = parseFloat(document.getElementById("salario").value);
+
+  // Obtém o percentual de reajuste
+  var reajuste = parseFloat(document.getElementById("reajuste").value);
+
+  // Calcula o valor do aumento
+  //var aumento = (salario * reajuste) / 100;
+
+  // Calcula o novo salário
+  var novoSalario = salario + (salario * reajuste) / 100;
+
+  // Mostra o novo salário
+  alert("O novo salário é de R$" + novoSalario);
+}
+
+function semana() {
+  // Obtém o número do dia da semana
+  var data = document.getElementById("data").value;
+
+  // Verifica se o número está entre 1 e 7
+  if (data < 1 || data > 7) {
+    alert("O número deve estar entre 1 e 7.");
+    return;
+  }
+
+  // Obtém o dia da semana correspondente
+  var dia = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+  var diaSemana = dia[data - 1];
+
+  // Mostra o dia da semana
+  alert("O dia da semana é " + diaSemana);
+}
+
+function valoresPar(n) {
+  if (n < 1) {
+    document.write("O número deve ser maior que zero.");
+  } else if (n % 2 !== 0) {
+    alert("O número deve ser par.");
+  } else {
+    for (let i = 1; i <= n; i++) {
+      document.write(i + "<br>");
+    }
+  }
+}
+
   
