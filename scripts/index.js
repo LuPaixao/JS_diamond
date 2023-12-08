@@ -87,4 +87,44 @@ function valoresPar(n) {
   }
 }
 
+function somarAnteriores() {
+  // Obtém o número
+  var nume = document.getElementById("nume").value;
+
+  // Verifica se o número é positivo
+  if (nume % 2 !== 0) {
+    alert("O número deve ser par.");
+    return;
+  }
+
+  // Usa um for loop para iterar sobre os números
+  var soma = 0;
+  for (var i = 1; i < nume; i++) {
+    // Soma o número atual
+    soma += i;
+  }
+  // Mostra a soma
+  document.getElementById("soma").innerHTML = soma;
+}
+
+function imparAnteriores() {
+  // Obtém o número
+  var impar = document.getElementById("impar").value;
+
+  // Verifica se o número é positivo
+  if (Math.sign(impar) === -1) {
+    alert("O número deve ser positivo.");
+    return;
+  }
+
+  // Limpa o conteúdo do elemento `numeros`
+  document.getElementById("numeros").innerHTML = "";
+
+  // Usa um for loop para iterar sobre os números
+  for (var i = 1; i <= impar; i += 2) {
+    // Mostra o número atual
+    document.getElementById("numeros").innerHTML += i + " ";
+  }
+}
+
   

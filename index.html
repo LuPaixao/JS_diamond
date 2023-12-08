@@ -78,7 +78,31 @@
                         Sexta questão: Digite número par
                     </p>
                     <input type="number" id="valPar" name="number" min="1" max="100">
-                    <button onclick="valoresPar(document.getElementById('valPar').value)">Exibir</button>
+                    <button onc lick="valoresPar(document.getElementById('valPar').value)">Exibir</button>
+                </div>
+            </section>
+
+            <section class="questao">
+                <div class="caixa">
+                    <p class="pergunta">
+                        Sétima questão: Digite número par e some os valores anteriores a ele
+                    </p>
+                    <input type="number" id="nume">
+                    <br>
+                    <button onclick="somarAnteriores()">Somar</button>
+                    <p id="soma"></p>
+                </div>
+            </section>
+
+            <section class="questao">
+                <div class="caixa">
+                    <p class="pergunta">
+                        Oitava questão: Digite número par e mostre impares anterios a ele
+                    </p>
+                    <input type="number" id="impar">
+                    <br>
+                    <button button onclick="imparAnteriores()">Mostrar</button>
+                    <div id="numeros"></div>
                 </div>
             </section>
 
