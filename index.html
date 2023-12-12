@@ -11,14 +11,14 @@
     <body>
 
         <header>
-            <h1>JavaScript QUESTÕES</h1>
+            <h1 class="title">JavaScript QUESTÕES</h1>
         </header>
 
         <main>
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Primeira questão: Número impar ou par
+                        01) Digite um número ímpar ou par 
                     </p>
                     <input type="number" id="num">
                     <br>
@@ -29,7 +29,7 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Segunda questão: Qual o maior número
+                        02) Digite dois números interios diferentes
                     </p>
                     <input type="number" id="num1">
                     <input type="number" id="num2">
@@ -41,7 +41,7 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Terceira questão: Pode votar ou não
+                        03) Digite o ano de nascimento e saberá se pode votar ou não
                     </p>
                     <input type="number" id="nascimento">
                     <br>
@@ -52,7 +52,7 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Quarta questão: Calcule o valor do reajuste de salário
+                        04) Escreva o seu salário atual e digite o valor que será acrescentado
                     </p>
                     <input type="number" id="salario">
                     <input type="number" id="reajuste">
@@ -64,7 +64,7 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Quinta questão: Digite entre 1 a 7 os dias da semana
+                        05) Digite entre 1 a 7 os dias da semana
                     </p>
                     <input type="number" id="data">
                     <br>
@@ -75,17 +75,17 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Sexta questão: Digite número par
+                        06) Digite um valor inteiro e verá os números anteriores a ele
                     </p>
-                    <input type="number" id="valPar" name="number" min="1" max="100">
-                    <button onc lick="valoresPar(document.getElementById('valPar').value)">Exibir</button>
+                    <input type="number" id="valPar" name="number" min="1" max="100"><br>
+                    <button onclick="valoresPar(document.getElementById('valPar').value)">Exibir</button>
                 </div>
             </section>
 
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Sétima questão: Digite número par e some os valores anteriores a ele
+                        07) Digite um valor inteiro e verá a soma de todos os números anteriores a ele
                     </p>
                     <input type="number" id="nume">
                     <br>
@@ -97,7 +97,7 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Oitava questão: Digite número par e mostre impares anterios a ele
+                        08) Digite um valor inteiro e verá os números ímapres anteriores a ele
                     </p>
                     <input type="number" id="impar">
                     <br>
@@ -109,7 +109,7 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Digite 5 números inteiros separados por "-":
+                        09) Digite 5 números inteiros separados por "-":
                     </p>
                     <label for="numbers"></label>
                     <input type="text" id="numbers" name="numbers"><br>
@@ -121,7 +121,7 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Digite 5 números inteiros separados por "/":
+                        10) Digite 5 números inteiros separados por "/":
                     </p>
                     <label for="numbers"></label>
                     <input type="text" id="numbers" name="numbers"><br>
@@ -133,9 +133,9 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Escreva alguma palavra, ou digite sequencia de números: 
+                        11) Escreva alguma palavra, ou digite sequencia de números: 
                     </p>
-                    <input type="text" id="string">
+                    <input type="text" id="string"><br>
                     <button onclick="inverter()">Inverter</button>
                     <p id="inverso"></p>
                 </div>
@@ -144,11 +144,11 @@
             <section class="questao">
                 <div class="caixa">
                     <p class="pergunta">
-                        Escreva alguma palavra, ou digite sequencia de números: 
+                        12) Escreva alguma palavra, ou digite sequencia de números: 
                     </p>
-                    <label for="string">Digite uma string:</label>
-                    <input type="text" id="digito" name="string"><br><br>
-                    <button onclick="finalDigito()">Mostrar</button><br><br>
+                    <label for="string"></label>
+                    <input type="text" id="digito" name="string"><br>
+                    <button onclick="finalDigito()">Mostrar</button>
                     <div id="digitoFinal"></div>
                 </div>
             </section>
